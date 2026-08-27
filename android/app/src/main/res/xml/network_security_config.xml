@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+  <base-config cleartextTrafficPermitted="true">   <!-- DIRNA-VULN:m5_cleartext_http / m8_backup_cleartext -->
+    <trust-anchors><certificates src="system"/><certificates src="user"/></trust-anchors> <!-- DIRNA-VULN:m5_trust_all_tls -->
+  </base-config>
+</network-security-config>
